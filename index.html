@@ -8,10 +8,13 @@
 </head>
 <body>
   <h1>Upload your photo 📸</h1>
-  <form id="uploadForm">
-    <input type="file" id="photoInput" name="photo" accept="image/*">
+
+  <!-- ✅ Fixed form with correct attributes -->
+  <form id="uploadForm" action="https://karen-backend.onrender.com/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" id="photoInput" name="image" accept="image/*">
     <button type="submit">Send</button>
   </form>
+
   <p id="status"></p>
 
   <script src="script.js"></script>
