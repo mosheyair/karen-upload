@@ -14,7 +14,8 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
   formData.append("image", file);
 
   try {
-    const response = await fetch("https://karen-backend.onrender.com/upload", {
+    const response = await fetch("https://www.mokafullstack.com:3000/upload", {
+
       method: "POST",
       body: formData,
     });
